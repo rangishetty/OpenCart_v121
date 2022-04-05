@@ -1,0 +1,494 @@
+16:21:07.237 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J2 as the default logging framework
+16:21:07.244 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+16:21:07.244 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+16:21:07.247 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@47ec7422
+16:21:07.264 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+16:21:07.264 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 17
+16:21:07.266 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+16:21:07.267 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+16:21:07.268 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+16:21:07.268 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:253) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:247) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:114) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:251) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:224) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:203) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111) ~[async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90) ~[async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32) ~[async-http-client-2.12.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:119) ~[selenium-remote-driver-4.1.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:52) ~[selenium-remote-driver-4.1.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:160) ~[selenium-remote-driver-4.1.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:107) ~[selenium-remote-driver-4.1.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94) ~[selenium-remote-driver-4.1.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85) ~[selenium-remote-driver-4.1.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:80) ~[selenium-remote-driver-4.1.3.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:35) ~[selenium-chromium-driver-4.1.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:118) ~[selenium-chrome-driver-4.1.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106) ~[selenium-chrome-driver-4.1.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93) ~[selenium-chrome-driver-4.1.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:48) ~[selenium-chrome-driver-4.1.3.jar:?]
+	at testBase.BaseClass.setup(BaseClass.java:22) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122) ~[testng-7.5.jar:7.5]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:808) [testng-7.5.jar:7.5]
+	at org.testng.TestRunner.run(TestRunner.java:603) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuites(TestNG.java:1092) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.run(TestNG.java:1060) [testng-7.5.jar:7.5]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77) [testng-remote.jar:?]
+16:21:07.274 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+16:21:07.275 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @464bee09
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:560) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:375) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:366) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:114) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:251) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:224) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:203) ~[netty-common-4.1.75.Final.jar:4.1.75.Final]
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111) ~[async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90) ~[async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32) ~[async-http-client-2.12.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:119) ~[selenium-remote-driver-4.1.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:52) ~[selenium-remote-driver-4.1.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:160) ~[selenium-remote-driver-4.1.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:107) ~[selenium-remote-driver-4.1.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94) ~[selenium-remote-driver-4.1.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85) ~[selenium-remote-driver-4.1.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:80) ~[selenium-remote-driver-4.1.3.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:35) ~[selenium-chromium-driver-4.1.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:118) ~[selenium-chrome-driver-4.1.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106) ~[selenium-chrome-driver-4.1.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93) ~[selenium-chrome-driver-4.1.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:48) ~[selenium-chrome-driver-4.1.3.jar:?]
+	at testBase.BaseClass.setup(BaseClass.java:22) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178) ~[testng-7.5.jar:7.5]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122) ~[testng-7.5.jar:7.5]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:808) [testng-7.5.jar:7.5]
+	at org.testng.TestRunner.run(TestRunner.java:603) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.5.jar:7.5]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.runSuites(TestNG.java:1092) [testng-7.5.jar:7.5]
+	at org.testng.TestNG.run(TestNG.java:1060) [testng-7.5.jar:7.5]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77) [testng-remote.jar:?]
+16:21:07.277 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+16:21:07.277 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+16:21:07.277 [main] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 4240441344 bytes (maybe)
+16:21:07.277 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\nihaa\AppData\Local\Temp (java.io.tmpdir)
+16:21:07.278 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+16:21:07.278 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+16:21:07.278 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+16:21:07.279 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+16:21:07.280 [main] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+16:21:07.280 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+16:21:07.287 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+16:21:07.301 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+16:21:07.301 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+16:21:07.341 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+16:21:07.341 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+16:21:07.362 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 24
+16:21:07.370 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+16:21:07.370 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+16:21:07.381 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7f08caf
+16:21:07.383 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@54657dd2
+16:21:07.385 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@706eab5d
+16:21:07.386 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@72725ee1
+16:21:07.387 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@40e60ece
+16:21:07.389 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3f9270ed
+16:21:07.390 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3a230001
+16:21:07.391 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5ac6c4f2
+16:21:07.393 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2aa6311a
+16:21:07.395 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@61f39bb
+16:21:07.397 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@249e0271
+16:21:07.398 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4893b344
+16:21:07.400 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@53a665ad
+16:21:07.401 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2c0b4c83
+16:21:07.403 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@78525ef9
+16:21:07.404 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2d0ecb24
+16:21:07.406 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4d654825
+16:21:07.407 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3bfc6a5e
+16:21:07.409 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@51b35e4e
+16:21:07.410 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@abff8b7
+16:21:07.412 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6d7cada5
+16:21:07.413 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@350a94ce
+16:21:07.414 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7e00ed0f
+16:21:07.416 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@b0fc838
+16:21:07.434 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 24
+16:21:07.434 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 24
+16:21:07.434 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+16:21:07.434 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+16:21:07.434 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+16:21:07.434 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+16:21:07.434 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+16:21:07.434 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+16:21:07.435 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+16:21:07.435 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+16:21:07.435 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+16:21:07.435 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+16:21:07.444 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+16:21:07.444 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+16:21:07.445 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+16:21:07.708 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 22952 (auto-detected)
+16:21:07.710 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+16:21:07.710 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+16:21:07.723 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+16:21:07.724 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+16:21:07.754 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: d8:3b:bf:ff:fe:cf:71:32 (auto-detected)
+16:21:07.810 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+16:21:07.811 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+16:21:07.811 [AsyncHttpClient-1-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5306e8c3
+16:21:07.838 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+16:21:07.838 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+16:21:07.838 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+16:21:07.838 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+16:21:08.702 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+16:21:08.830 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x727426755a2fe40b
+16:21:08.902 [main] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+16:21:09.815 [main] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+16:21:10.195 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+16:21:10.727 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+16:21:10.799 [main] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+16:21:10.856 [main] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+16:21:10.919 [main] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+16:21:10.975 [main] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+16:21:11.031 [main] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+16:21:11.084 [main] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+16:21:11.133 [main] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+16:21:12.029 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+16:21:12.059 [main] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+16:21:12.061 [main] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+16:23:02.102 [main] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+16:23:02.865 [main] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+16:23:03.254 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+16:23:03.973 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+16:23:04.044 [main] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+16:23:04.099 [main] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+16:23:04.160 [main] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+16:23:04.217 [main] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+16:23:04.273 [main] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+16:23:04.328 [main] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+16:23:04.376 [main] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+16:23:05.197 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+16:23:05.230 [main] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+16:23:05.232 [main] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+17:03:17.628 [main] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+17:03:18.320 [main] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+17:03:18.711 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+17:03:19.175 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+17:03:19.269 [main] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+17:03:19.327 [main] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+17:03:19.386 [main] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+17:03:19.441 [main] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+17:03:19.496 [main] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+17:03:19.552 [main] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+17:03:19.598 [main] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+17:03:20.372 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+17:03:20.403 [main] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+17:03:20.405 [main] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+17:34:45.660 [main] INFO  testCases.TC_001_AccountRegistration - launched chrome browser
+17:34:45.689 [main] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+17:34:46.444 [main] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+17:34:46.872 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+17:34:47.372 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+17:34:47.455 [main] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+17:34:47.519 [main] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+17:34:47.588 [main] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+17:34:47.644 [main] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+17:34:47.696 [main] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+17:34:47.750 [main] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+17:34:47.798 [main] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+17:34:48.570 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+17:34:48.603 [main] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+17:34:48.605 [main] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+17:35:24.042 [main] INFO  testCases.TC_001_AccountRegistration - launched edge browser
+17:35:24.079 [main] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+17:35:24.861 [main] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+17:35:25.403 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+17:35:25.869 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+17:35:25.948 [main] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+17:35:26.013 [main] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+17:35:26.083 [main] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+17:35:26.143 [main] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+17:35:26.203 [main] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+17:35:26.264 [main] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+17:35:26.314 [main] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+17:35:27.128 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+17:35:27.161 [main] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+17:35:27.163 [main] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+17:35:55.065 [main] INFO  testCases.TC_001_AccountRegistration - launched firefox browser
+17:35:55.106 [main] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+17:35:56.108 [main] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+17:35:56.793 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+17:35:57.253 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+17:35:57.288 [main] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+17:35:57.312 [main] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+17:35:57.341 [main] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+17:35:57.366 [main] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+17:35:57.392 [main] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+17:35:57.416 [main] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+17:35:57.637 [main] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+17:35:58.555 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+17:35:58.571 [main] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+17:35:58.571 [main] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+17:45:33.084 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - launched chrome browser
+17:45:33.111 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+17:45:33.864 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+17:45:34.365 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - launched edge browser
+17:45:34.377 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+17:45:34.439 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+17:45:34.897 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+17:45:35.000 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+17:45:35.079 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+17:45:35.175 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+17:45:35.275 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+17:45:35.336 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+17:45:35.352 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+17:45:35.436 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+17:45:35.498 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+17:45:35.776 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+17:45:36.255 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+17:45:36.286 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+17:45:36.325 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+17:45:36.327 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+17:45:36.346 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+17:45:36.469 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+17:45:36.578 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+17:45:36.662 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+17:45:36.741 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+17:45:36.815 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+17:45:36.879 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+17:45:37.661 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+17:45:37.694 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+17:45:37.694 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+17:45:40.426 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - launched firefox browser
+17:45:40.434 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+17:45:41.407 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+17:45:41.962 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+17:45:42.446 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+17:45:42.490 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+17:45:42.518 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+17:45:42.546 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+17:45:42.570 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+17:45:42.590 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+17:45:42.610 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+17:45:42.834 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+17:45:43.630 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+17:45:43.642 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+17:45:43.646 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+17:47:11.083 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - launched chrome browser
+17:47:11.112 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+17:47:11.866 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+17:47:12.311 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - launched edge browser
+17:47:12.316 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+17:47:12.425 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+17:47:12.893 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+17:47:13.024 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+17:47:13.069 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+17:47:13.112 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+17:47:13.201 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+17:47:13.295 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+17:47:13.374 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+17:47:13.446 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+17:47:13.512 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+17:47:13.615 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+17:47:14.200 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+17:47:14.273 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+17:47:14.355 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+17:47:14.361 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+17:47:14.401 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+17:47:14.403 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+17:47:14.451 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+17:47:14.557 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+17:47:14.650 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+17:47:14.731 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+17:47:14.789 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+17:47:15.606 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+17:47:15.645 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+17:47:15.645 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+17:47:18.487 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - launched firefox browser
+17:47:18.491 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+17:47:19.449 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+17:47:20.097 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+17:47:20.617 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+17:47:20.645 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+17:47:20.669 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+17:47:20.705 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+17:47:20.729 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+17:47:20.749 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+17:47:20.769 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+17:47:20.993 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+17:47:21.890 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+17:47:21.906 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+17:47:21.906 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+18:02:24.867 [main] INFO  testCases.TC_001_AccountRegistration - launched chrome browser
+18:02:24.897 [main] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+18:02:24.898 [main] FATAL testCases.TC_001_AccountRegistration - Account Registration Failed 
+18:05:31.579 [main] INFO  testCases.TC_001_AccountRegistration - launched chrome browser
+18:05:31.604 [main] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+18:05:32.371 [main] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+18:05:32.770 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+18:05:33.325 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+18:05:33.409 [main] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+18:05:33.474 [main] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+18:05:33.547 [main] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+18:05:33.612 [main] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+18:05:33.674 [main] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+18:05:33.733 [main] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+18:05:33.783 [main] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+18:05:34.597 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+18:05:34.632 [main] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+18:05:34.635 [main] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+19:32:57.031 [main] INFO  testCases.TC_001_AccountRegistration - launched chrome browser
+19:32:57.063 [main] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+19:32:58.693 [main] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+19:32:58.922 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+19:32:59.374 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+19:32:59.471 [main] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+19:32:59.541 [main] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+19:32:59.613 [main] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+19:32:59.680 [main] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+19:32:59.751 [main] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+19:32:59.819 [main] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+19:32:59.871 [main] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+19:33:00.636 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+19:33:00.671 [main] ERROR testCases.TC_001_AccountRegistration - Account Registration Failed 
+20:09:46.243 [main] INFO  testCases.TC_001_AccountRegistration - launched chrome browser
+20:09:46.274 [main] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+20:09:47.019 [main] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+20:09:47.494 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+20:09:48.000 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+20:09:48.080 [main] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+20:09:48.144 [main] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+20:09:48.216 [main] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+20:09:48.278 [main] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+20:09:48.340 [main] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+20:09:48.400 [main] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+20:09:48.450 [main] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+20:09:49.289 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+20:09:49.320 [main] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+20:09:49.322 [main] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+20:34:31.524 [main] INFO  testCases.TC_001_AccountRegistration - launched chrome browser
+20:34:31.550 [main] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+20:34:32.254 [main] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+20:34:32.670 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+20:34:33.169 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+20:34:33.259 [main] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+20:34:33.325 [main] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+20:34:33.392 [main] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+20:34:33.453 [main] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+20:34:33.512 [main] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+20:34:33.570 [main] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+20:34:33.618 [main] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+20:34:34.378 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+20:34:34.411 [main] ERROR testCases.TC_001_AccountRegistration - Account Registration Failed 
+12:18:07.123 [main] INFO  testCases.TC_001_AccountRegistration - launched chrome browser
+12:18:07.160 [main] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+12:18:08.153 [main] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+12:18:08.448 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+12:18:08.953 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+12:18:09.025 [main] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+12:18:09.082 [main] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+12:18:09.154 [main] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+12:18:09.215 [main] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+12:18:09.279 [main] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+12:18:09.341 [main] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+12:18:09.392 [main] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+12:18:10.202 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+12:18:10.235 [main] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+12:18:10.237 [main] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+12:34:17.730 [main] INFO  testCases.TC_001_AccountRegistration - launched chrome browser
+12:34:17.762 [main] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+12:34:18.508 [main] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+12:34:18.919 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+12:34:19.369 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+12:34:19.456 [main] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+12:34:19.524 [main] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+12:34:19.592 [main] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+12:34:19.650 [main] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+12:34:19.708 [main] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+12:34:19.780 [main] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+12:34:19.840 [main] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+12:34:20.666 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+12:34:20.700 [main] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+12:34:20.703 [main] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+12:34:21.995 [main] INFO  testCases.TC_002_Login - launched chrome browser
+12:34:22.000 [main] INFO  testCases.TC_002_Login -  Starting TC_002_Login 
+12:34:22.707 [main] INFO  testCases.TC_002_Login - Home Page Displayed 
+12:34:23.145 [main] INFO  testCases.TC_002_Login - Clicked on My Account 
+12:34:23.519 [main] INFO  testCases.TC_002_Login - Clicked on Login 
+12:34:23.599 [main] INFO  testCases.TC_002_Login - Provided Email 
+12:34:23.667 [main] INFO  testCases.TC_002_Login - Provided Password 
+12:34:24.578 [main] INFO  testCases.TC_002_Login - Clicked on Login
+12:34:24.618 [main] INFO  testCases.TC_002_Login - Login Success 
+12:34:24.619 [main] INFO  testCases.TC_002_Login -  Finished TC_002_Login 
+16:22:03.498 [main] INFO  testCases.TC_003_LoginDDT - launched chrome browser
+16:25:26.676 [main] INFO  testCases.TC_003_LoginDDT - launched chrome browser
+17:45:52.022 [main] INFO  testCases.TC_001_AccountRegistration - launched chrome browser
+17:45:52.054 [main] INFO  testCases.TC_001_AccountRegistration -  Starting TC_001_AccountRegistration
+17:45:52.896 [main] INFO  testCases.TC_001_AccountRegistration - Home Page Displayed 
+17:45:53.305 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on My Account 
+17:45:53.755 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Register 
+17:45:53.828 [main] INFO  testCases.TC_001_AccountRegistration - Provided First Name 
+17:45:53.893 [main] INFO  testCases.TC_001_AccountRegistration - Provided Last Name 
+17:45:53.953 [main] INFO  testCases.TC_001_AccountRegistration - Provided Email 
+17:45:54.008 [main] INFO  testCases.TC_001_AccountRegistration - Provided Telephone 
+17:45:54.068 [main] INFO  testCases.TC_001_AccountRegistration - Provided Password 
+17:45:54.128 [main] INFO  testCases.TC_001_AccountRegistration - Provided Confrmed Password 
+17:45:54.178 [main] INFO  testCases.TC_001_AccountRegistration - Set Privacy Policy 
+17:45:54.944 [main] INFO  testCases.TC_001_AccountRegistration - Clicked on Continue 
+17:45:54.979 [main] INFO  testCases.TC_001_AccountRegistration - Account Registration Success 
+17:45:54.980 [main] INFO  testCases.TC_001_AccountRegistration -  Finished TC_001_AccountRegistration 
+17:45:56.275 [main] INFO  testCases.TC_002_Login - launched chrome browser
+17:45:56.280 [main] INFO  testCases.TC_002_Login -  Starting TC_002_Login 
+17:45:57.169 [main] INFO  testCases.TC_002_Login - Home Page Displayed 
+17:45:57.538 [main] INFO  testCases.TC_002_Login - Clicked on My Account 
+17:45:57.941 [main] INFO  testCases.TC_002_Login - Clicked on Login 
+17:45:58.029 [main] INFO  testCases.TC_002_Login - Provided Email 
+17:45:58.110 [main] INFO  testCases.TC_002_Login - Provided Password 
